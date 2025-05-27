@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewelry Timeless Elegance and Crafted</title>
     <meta name="description" content="Discover your perfect piece of timeless jewelry crafted with elegance">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hover-scale { transition: transform 0.3s ease-in-out; }
+        .hover-scale:hover { transform: scale(1.02); }
+        .smooth-transition { transition: all 0.3s ease-in-out; }
+    </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Announcement Bar -->
@@ -18,25 +31,35 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="#" class="text-2xl font-bold">JEWELRY</a>
+                <a href="https://Shout95.github.io/jewelry-timeless-elegance-and-crafted-2025-05-27-w75gu" class="text-2xl font-bold hover:text-gray-700 transition-colors duration-300">JEWELRY</a>
             </div>
             
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#" class="text-gray-600 hover:text-black transition-colors duration-300">Shop</a>
-                <a href="#" class="text-gray-600 hover:text-black transition-colors duration-300">Collections</a>
-                <a href="#" class="text-gray-600 hover:text-black transition-colors duration-300">About</a>
-                <a href="#" class="text-gray-600 hover:text-black transition-colors duration-300">Contact</a>
+                <a href="#features" class="text-gray-600 hover:text-black transition-colors duration-300">Shop</a>
+                <a href="#collections" class="text-gray-600 hover:text-black transition-colors duration-300">Collections</a>
+                <a href="#about" class="text-gray-600 hover:text-black transition-colors duration-300">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-black transition-colors duration-300">Contact</a>
             </div>
 
             <div class="flex items-center space-x-4">
-                <button class="hidden md:block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                <button class="hidden md:block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-105">
                     Buy Now
                 </button>
-                <button class="md:hidden">
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white w-full absolute top-full left-0 shadow-lg">
+            <div class="px-4 py-2 space-y-4">
+                <a href="#features" class="block text-gray-600 hover:text-black py-2">Shop</a>
+                <a href="#collections" class="block text-gray-600 hover:text-black py-2">Collections</a>
+                <a href="#about" class="block text-gray-600 hover:text-black py-2">About</a>
+                <a href="#contact" class="block text-gray-600 hover:text-black py-2">Contact</a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -50,43 +73,58 @@
         
         <div class="relative container mx-auto px-4 h-full flex items-center justify-center">
             <div class="text-center max-w-4xl">
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
                     Jewelry Timeless Elegance and Crafted
                 </h1>
                 <p class="text-xl md:text-2xl text-white/90 mb-8">
-                    Discover Your Perfect Piece
+                    Discover Your Perfect Piece of Timeless Elegance
                 </p>
                 <a href="https://www.landingpages.kalaharriwebagency.online" 
-                   class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:transform hover:scale-105 transition-all duration-300">
+                   class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     Explore Collection
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Story</h2>
+            <div class="space-y-8">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Founded in 1995, our journey began with a simple passion for creating beautiful, timeless jewelry pieces. What started as a small family workshop has grown into a renowned jewelry house, known for our commitment to exceptional craftsmanship and innovative designs.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Our mission is to create jewelry that not only captures the essence of elegance but also tells a unique story for each wearer. We believe in sustainable practices, ethical sourcing, and creating pieces that will be treasured for generations to come. Our core values of integrity, excellence, and innovation guide every piece we create.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section class="py-24 bg-white">
+    <section id="features" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- Watches -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl mb-6"><i class="fas fa-clock"></i></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-102 hover-scale">
+                    <div class="text-4xl mb-6 text-gray-800"><i class="fas fa-clock"></i></div>
                     <h3 class="text-2xl font-bold mb-4">Luxury Watches</h3>
-                    <p class="text-gray-600">Timeless timepieces crafted with precision and elegance.</p>
+                    <p class="text-gray-600">Masterfully crafted timepieces that combine precision engineering with elegant design. Each watch is a statement of sophistication and style.</p>
                 </div>
 
                 <!-- Necklace -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl mb-6"><i class="fas fa-gem"></i></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-102 hover-scale">
+                    <div class="text-4xl mb-6 text-gray-800"><i class="fas fa-gem"></i></div>
                     <h3 class="text-2xl font-bold mb-4">Elegant Necklaces</h3>
-                    <p class="text-gray-600">Stunning pieces that make a lasting impression.</p>
+                    <p class="text-gray-600">Exquisite necklaces designed to enhance your natural beauty. From delicate chains to statement pieces, find your perfect match.</p>
                 </div>
 
                 <!-- Engagement Rings -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl mb-6"><i class="fas fa-ring"></i></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-102 hover-scale">
+                    <div class="text-4xl mb-6 text-gray-800"><i class="fas fa-ring"></i></div>
                     <h3 class="text-2xl font-bold mb-4">Engagement Rings</h3>
-                    <p class="text-gray-600">Symbol of eternal love and commitment.</p>
+                    <p class="text-gray-600">Celebrate your love story with our carefully curated collection of engagement rings, each designed to be as unique as your relationship.</p>
                 </div>
             </div>
         </div>
@@ -99,15 +137,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
                     <h2 class="text-4xl font-bold">Family Heirlooms</h2>
-                    <p class="text-gray-600 text-lg">Create lasting memories with pieces that can be passed down through generations.</p>
-                    <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                    <p class="text-gray-600 text-lg">Our expertly crafted pieces are designed to become cherished family heirlooms, passing down stories and memories through generations. Each piece is created with the finest materials and attention to detail, ensuring it stands the test of time both in style and durability.</p>
+                    <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                         Learn More
                     </a>
                 </div>
-                <div class="rounded-2xl overflow-hidden">
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                     <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" 
                          alt="Family Jewelry" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
                 </div>
             </div>
         </div>
@@ -117,15 +155,15 @@
     <section class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="rounded-2xl overflow-hidden order-2 md:order-1">
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 order-2 md:order-1">
                     <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" 
                          alt="Romantic Jewelry" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
                 </div>
                 <div class="space-y-6 order-1 md:order-2">
                     <h2 class="text-4xl font-bold">Romance</h2>
-                    <p class="text-gray-600 text-lg">Express your love with our carefully curated romantic collection.</p>
-                    <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                    <p class="text-gray-600 text-lg">Celebrate love with our romantic collection, featuring pieces that capture the essence of your special moments. From engagement rings to anniversary gifts, each piece is designed to symbolize your unique love story and create lasting memories.</p>
+                    <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                         Explore Collection
                     </a>
                 </div>
@@ -139,45 +177,121 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
                     <h2 class="text-4xl font-bold">Weddings</h2>
-                    <p class="text-gray-600 text-lg">Make your special day unforgettable with our wedding collection.</p>
-                    <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                    <p class="text-gray-600 text-lg">Transform your wedding day into an unforgettable celebration with our exquisite bridal collection. From stunning engagement rings to complete wedding sets, we offer pieces that perfectly complement your special day and become treasured keepsakes.</p>
+                    <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                         View Collection
                     </a>
                 </div>
-                <div class="rounded-2xl overflow-hidden">
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                     <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" 
                          alt="Wedding Jewelry" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"The craftsmanship of my engagement ring is absolutely stunning. The attention to detail and quality exceeded my expectations."</p>
+                    <div class="font-semibold">Sarah Johnson</div>
+                    <div class="text-sm text-gray-500">Bride-to-be</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"I inherited a family heirloom and had it restored here. The team treated it with such care and respect, maintaining its original charm while giving it new life."</p>
+                    <div class="font-semibold">Michael Chen</div>
+                    <div class="text-sm text-gray-500">Collector</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"The custom design process was incredible. They took my vision and created something even more beautiful than I imagined."</p>
+                    <div class="font-semibold">Emma Thompson</div>
+                    <div class="text-sm text-gray-500">Interior Designer</div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"Their wedding collection is simply breathtaking. The matching set we chose perfectly complemented our special day."</p>
+                    <div class="font-semibold">David Miller</div>
+                    <div class="text-sm text-gray-500">Recent Groom</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 bg-gray-50">
+    <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-lg shadow-md">
+                <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                     <button class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center">
                         <span>What is your return policy?</span>
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
                     </button>
                     <div class="px-6 py-4 border-t">
-                        <p class="text-gray-600">We offer a 100% satisfaction guarantee with full refund upon return within 30 days.</p>
+                        <p class="text-gray-600">We offer a 30-day money-back guarantee on all purchases. Items must be returned in their original condition with all documentation and packaging.</p>
                     </div>
                 </div>
-                <!-- Add more FAQ items as needed -->
+
+                <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center">
+                        <span>Do you offer custom designs?</span>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 py-4 border-t">
+                        <p class="text-gray-600">Yes, we specialize in custom jewelry design. Our expert craftsmen will work with you to create a unique piece that matches your vision and style.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center">
+                        <span>How do I care for my jewelry?</span>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 py-4 border-t">
+                        <p class="text-gray-600">We recommend regular cleaning with a soft cloth and periodic professional cleaning. Store pieces separately to prevent scratching and avoid exposure to chemicals.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center">
+                        <span>What are your shipping options?</span>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 py-4 border-t">
+                        <p class="text-gray-600">We offer worldwide shipping with tracking. Standard delivery takes 5-7 business days, and express shipping is available for 2-3 day delivery.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-black text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8">Ready to Find Your Perfect Piece?</h2>
+    <section class="py-24 relative">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&h=900&fit=crop&q=80" 
+                 alt="Luxury Jewelry Display" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        <div class="relative container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-white">Ready to Find Your Perfect Piece?</h2>
+            <p class="text-xl text-white/90 mb-8">Join us in creating timeless memories with our exquisite collection</p>
             <a href="https://www.landingpages.kalaharriwebagency.online" 
-               class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:transform hover:scale-105 transition-all duration-300">
+               class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                 Shop Now
             </a>
         </div>
@@ -189,18 +303,21 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">About Us</h3>
-                    <p class="text-gray-400">Crafting timeless pieces for life's special moments.</p>
+                    <p class="text-gray-400">Crafting timeless pieces for life's special moments since 1995.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <p class="text-gray-400">Email: rojnaweb@gmail.com</p>
+                    <p class="text-gray-400">Phone: (555) 123-4567</p>
+                    <p class="text-gray-400">Address: 123 Jewelry Lane, New York, NY 10001</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Policies</h3>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://Shout95.github.io/jewelry-timeless-elegance-and-crafted-2025-05-27-w75gu/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Shout95.github.io/jewelry-timeless-elegance-and-crafted-2025-05-27-w75gu/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://Shout95.github.io/jewelry-timeless-elegance-and-crafted-2025-05-27-w75gu/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                         <li><a href="#" class="hover:text-white transition-colors duration-300">Shipping Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Return Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
@@ -215,6 +332,9 @@
                         <a href="#" class="text-2xl hover:text-gray-400 transition-colors duration-300">
                             <i class="fab fa-twitter"></i>
                         </a>
+                        <a href="#" class="text-2xl hover:text-gray-400 transition-colors duration-300">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -223,5 +343,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
